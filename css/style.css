@@ -1,0 +1,133 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*css variables*/
+:root{
+    --navbar-height:59px;
+}
+
+/*Navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*logo and image*/
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 55px;
+    margin: 3px 6px;
+}
+
+/*list styling*/
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home:before{
+    content: "";
+    background:url("download (4).jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: -26px;
+
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+/*services center*/
+#services{
+    display: flex;
+
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 12px;
+    margin: 40px 18px;
+    border-radius: 23px;
+    background-color: rgb(240, 231, 231);
+}
+#services img{
+    width: 300px;
+    height: 183px;
+}
+
+/*client*/
+#client
+
+/*utility classes*/
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 15px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    margin: 17px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

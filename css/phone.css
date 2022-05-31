@@ -1,0 +1,23 @@
+@media  (max-width:1044px){
+    #navbar{
+        flex-direction: column;
+    }
+    #home{
+flex-direction: column;
+height: 370px;
+padding: 3px 68px;
+}
+#home p{
+padding: 14px;
+}
+#services{
+flex-direction: column;
+}
+.box img{
+height: 250px;
+}
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
